@@ -7,9 +7,11 @@
     File {{ fileName }} has been saved!
     {{/if}}  
 </div>
-<div>
-  <img src="../uploads/{{fileName}}" alt="">
-</div>
+  {{#if isSent}}
+  <div>
+  <img src="/uploads/{{fileName}}" alt="">
+  </div>
+  {{/if}}
 <div class="isError">
     {{#if isError}}
     You can't leave fields empty!

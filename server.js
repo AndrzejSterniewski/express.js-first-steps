@@ -35,6 +35,8 @@ app.post('/contact/send-message', upload.single('image'), (req, res) => {
     }
 });
 
+app.use('/uploads', express.static('uploads'));
+
 app.get('/', (req, res) => {
     res.render('index');
 });
