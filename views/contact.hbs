@@ -3,8 +3,12 @@
 <div class="isSent">
     {{#if isSent}}
     The message has been sent!
+    <br>
     File {{ fileName }} has been saved!
     {{/if}}  
+</div>
+<div>
+  <img src="../uploads/{{fileName}}" alt="">
 </div>
 <div class="isError">
     {{#if isError}}
